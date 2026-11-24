@@ -14,46 +14,67 @@ architecture, algorithms and data persistence.
 - Store player scores and gaming statistics.
 - Apply professional software development practices.
 
-## Planned Games
+## Games
 
-- Snake
-- Pong
-- Breakout
-- Space Invaders-style shooter
-- Falling block puzzle
+| Game  | Status |
+|---    |---     |
+| Snake | Implemented |
+| Pong  | Planned |
+| Breakout | Planned |
+| Space Invaders-style shooter | Planned |
+| Falling block puzzle | Planned |
 
-## Planned Features
+## Implemented Features
 
-- Arcade game selection menu
-- Keyboard controls
-- Player profiles
-- High-score leaderboard
-- SQLite database
-- Retro graphics and sound effects
-- Difficulty settings
-- Achievement system
-- Game statistics
-- Automated testing
-- Continuous integration
-
-## Technology Stack
-
-| Technology | Purpose |
-|---|---|
-| Python | Application development |
-| Pygame | Game engine and graphics |
-| SQLite | Planned data persistence |
-| Pytest | Automated testing |
-| Ruff | Linting and formatting |
-| Pre-commit | Code quality checks |
-| GitHub Actions | Continuous integration |
+- Modular arcade engine
+- Scene-based architecture
+- Interactive main menu
+- Keyboard navigation
+- Playable Snake game
+- Random food generation
+- Collision detection
+- Score tracking
+- Progressive difficulty
+- Pause and restart functionality
+- Automated unit testing
+- GitHub Actions continuous integration
 
 ## Current Status
 
-**Version: 0.1.0 — Initial Development**
+**Version: 0.2.0 — First Playable Game**
 
-The project structure and development environment are established.
-Game development is planned for the next development phase.
+The core arcade engine and the first playable game,
+Snake, have been implemented.
+
+## Screenshots
+
+### Main Menu
+
+![Main Menu](screenshots/main-menu.png)
+
+### Snake Gameplay
+
+![Snake Gameplay](screenshots/snake-gameplay.png)
+
+### Game Over
+
+![Game Over](screenshots/snake-game-over.png)
+
+## Running the Application
+
+```bash
+retro-arcade
+```
+
+## Snake Controls
+
+| Key | Action |
+|---|---|
+| Arrow keys / WASD | Move |
+| P | Pause / Resume |
+| R | Restart |
+| ESC | Return to menu |
+
 
 ## Installation
 

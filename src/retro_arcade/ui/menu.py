@@ -12,6 +12,7 @@ from retro_arcade.core.settings import (
     SCREEN_WIDTH,
     WHITE,
 )
+from retro_arcade.games.snake.game import SnakeGame
 from retro_arcade.ui.placeholder import PlaceholderScene
 
 
@@ -58,6 +59,10 @@ class MainMenu(Scene):
 
         if selected == "Exit":
             self.scene_manager.quit()
+            return
+
+        if selected == "Play Snake":
+            self.scene_manager.change_scene(SnakeGame(on_back=self.return_to_menu))
             return
 
         self.scene_manager.change_scene(
